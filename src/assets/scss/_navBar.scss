@@ -1,0 +1,33 @@
+#nav-bar {
+    background-color: #F8EDE3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    color: #7D6E83;
+    h2 {
+        font-size: 34px;
+        margin: 0;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            }
+    }
+
+    ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+            list-style-type: none;
+            font-weight: bold;
+            font-size: 20px;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}

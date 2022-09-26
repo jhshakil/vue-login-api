@@ -1,0 +1,33 @@
+.main-drag {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+    .drag {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 10px;
+
+        .col {
+            padding: 15px;
+            border: 1px solid red;
+
+            h3 {
+                font-size: 40px;
+            }
+
+            .list-group {
+                margin-top: 10px;
+
+                .list-group-item {
+                    border: 1px solid red;
+                    padding: 10px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

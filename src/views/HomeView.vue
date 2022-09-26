@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <hero />
+    <drage-file v-if="user"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Hero from '@/components/Hero.vue'
+import DrageFile from '@/components/DrageFile.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    Hero,
+    DrageFile,
+  },
+  computed: {
+        user() {
+         return  this.$store.getters.logInUser;
+        }
+    },
 }
-</script>
+
+    Hero</script>
